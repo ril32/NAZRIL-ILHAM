@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Nazril Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Nazril Store</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Produk</a></li>
+                    <li><a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-transition">
+        <section id="checkout-section" class="checkout-section fade-in">
+            <h2>Formulir Pembayaran</h2>
+            <div id="checkout-summary" class="checkout-summary">
+                <h3>Ringkasan Pesanan</h3>
+                <div id="checkout-items">
+                    </div>
+                <p>Total Akhir: <span id="checkout-total">Rp 0</span></p>
+            </div>
+
+            <form id="checkout-form" class="checkout-form">
+                <h3>Informasi Pengiriman</h3>
+                <div class="form-group">
+                    <label for="nama-lengkap">Nama Lengkap:</label>
+                    <input type="text" id="nama-lengkap" name="nama-lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap:</label>
+                    <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="kota">Kota:</label>
+                    <input type="text" id="kota" name="kota" required>
+                </div>
+                <div class="form-group">
+                    <label for="kode-pos">Kode Pos:</label>
+                    <input type="text" id="kode-pos" name="kode-pos" required>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                </div>
+
+                <h3>Metode Pembayaran</h3>
+                <div class="form-group">
+                    <select id="metode-pembayaran" name="metode-pembayaran" required>
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="transfer-bank">Transfer Bank</option>
+                        <option value="e-wallet">E-Wallet</option>
+                        <option value="kartu-kredit">Kartu Kredit (contoh saja)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Bayar Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Nazril Store. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
